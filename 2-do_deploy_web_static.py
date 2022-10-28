@@ -4,6 +4,8 @@ The 2-do_deploy_web_static.pyy module
 Fabric script (based on the file 1-pack_web_static.py) that
 distributes an archive to your web servers, using the function do_deploy
 """
+import datetime
+import os
 from os.path import isfile
 from fabric.api import put, run, env, local
 env.hosts = ['35.227.98.159', '104.196.65.233']
